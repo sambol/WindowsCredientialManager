@@ -2,7 +2,8 @@
     "name": "wincredmgr",
     "author": "Kiran Kumar",
     "contributors": [
-    	"Roi Atalla"
+    	"Roi Atalla",
+      "Sam Bolingbroke"
     ],
     "version": "2.0.0",
     "main": "./build/Release/wincredmgr"
