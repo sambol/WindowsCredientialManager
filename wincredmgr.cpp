@@ -88,7 +88,7 @@ void ReadCredentials(const FunctionCallbackInfo<Value>& args) {
     credentials->Set(context, String::NewFromUtf8(isolate, "username").ToLocalChecked(),
                      String::NewFromUtf8(isolate, (char const * const)creds->UserName).ToLocalChecked());
     credentials->Set(context, String::NewFromUtf8(isolate, "password").ToLocalChecked(),
-                     String::NewFromUtf8(isolate, (char const * const)creds->CredentialBlob).ToLocalChecked());
+                     String::NewFromUtf8(isolate, (char const * const)creds->CredentialBlob, NewStringType::kNormal, (int) creds->CredentialBlobSize).ToLocalChecked());
 
     args.GetReturnValue().Set(credentials);
 
